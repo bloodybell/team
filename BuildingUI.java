@@ -31,7 +31,7 @@ public class BuildingUI {
 		}
 	}
 
-	public void setPeoples(String name) {
+	public void setPeople(String name) {
 		Random random = new Random();
 		int roomNumber = random.nextInt(maxRoomCount) + 1;
 		int floorNumber = build.calcThisFloor(roomNumber);

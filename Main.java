@@ -21,13 +21,12 @@ public class Main {
 		// }
 		//
 		BuildingUI bUI = new BuildingUI(10);
+		String[] peoples = {"全辨悼", "捞根锋", "己冕氢", "芭合捞", "配尝"};
 
-		bUI.setPeoples("全辨悼");
-		bUI.setPeoples("捞根锋");
-		bUI.setPeoples("己冕氢");
-		bUI.setPeoples("芭合捞");
-		bUI.setPeoples("配尝");
-		
+		for (String name : peoples) {
+			bUI.setPeople(name);
+		}
+
 		bUI.printBuilding();
 		System.out.println();
 		
