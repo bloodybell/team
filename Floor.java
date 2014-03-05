@@ -41,8 +41,9 @@ public class Floor {
 
 	@Override
 	public String toString() {
-		return "Floor [start=" + start + ", end=" + end + ", floorNumber="
-				+ floorNumber + ", houses=" + houses + "]";
+//		return "Floor [start=" + start + ", end=" + end + ", floorNumber="
+//				+ floorNumber + ", houses=" + houses + "]";
+		return floorNumber + "층, " + start + "번지 부터, "  + end + " 까지 있습니다.";
 	}
 
 

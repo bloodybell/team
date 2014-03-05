@@ -10,9 +10,8 @@ public class House {
 		super();
 		this.number = number;
 	}
-	
-	
-//	호수를 얻어온다.
+
+	// 호수를 얻어온다.
 	public int getNumber() {
 		return number;
 	}
@@ -26,7 +25,7 @@ public class House {
 
 		return null;
 	}
-	
+
 	public ArrayList<People> getPeoples() {
 		return peoples;
 	}
@@ -38,12 +37,14 @@ public class House {
 	@Override
 	public String toString() {
 		String temp = "";
-		for (People people : peoples) {
-			temp += people.getName() + "| ";
+		if (peoples.isEmpty()) {
+			temp = "없음";
+		} else {
+			for (People people : peoples) {
+				temp += people.getName() + ", ";
+			}
 		}
-		return "House [number=" + number + ", peoples = [" + temp + "]]";
+		return number + "호실, 입주자 : " + temp + "";
 	}
-	
-	
 
 }
